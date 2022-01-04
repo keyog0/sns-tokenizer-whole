@@ -57,16 +57,16 @@ sudo ./build.sh
     ```dockerfile
     # Line 12
     # 변경전
-    ENV plugin_location=file:///usr/share/elasticsearch/elasticsearch-6.5.2-okt-2.1.0-plugin.zip
+    ENV plugin_location=file:///usr/share/elasticsearch/elasticsearch-7.9.3-okt-2.1.0-plugin.zip
 
     #변경후
-    ENV plugin_location=https://github.com/Keunyoung-Jung/kubeflow-pipeline-login/raw/master/elasticsearch-6.5.2-okt-2.1.0-plugin.zip
+    ENV plugin_location=https://github.com/Keunyoung-Jung/kubeflow-pipeline-login/raw/master/elasticsearch-7.9.3-okt-2.1.0-plugin.zip
     ```
 * default는 output 폴더내 파일의 위치입니다.
 * 이 후 빌드를 진행하여 이미지를 생성합니다.
 * 약 10초정도 소요됩니다.
 ```shell
-docker build -t es-okt-tokenizer:6.5.2-okt-2.1.0 -f elasticsearch.Dockerfile .
+docker build -t es-okt-tokenizer:7.9.3-okt-2.1.0 -f elasticsearch.Dockerfile .
 ```
 ### Error: max virtual memory areas vm.max_map_count 
 ```

@@ -6,7 +6,7 @@ docker run --rm \
  create-okt \
  /bin/bash -c "source create-okt.sh"
 
-docker build -t es-okt-tokenizer:6.5.2-okt-2.1.0 \
+docker build -t es-okt-tokenizer:7.9.3-okt-2.1.0 \
  -f elasticsearch.Dockerfile .
 
 docker-compose up -d

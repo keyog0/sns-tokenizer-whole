@@ -12,9 +12,9 @@ cp /open-korean-text/target/open-korean-text-2.3.2-SNAPSHOT.jar \
 
 cd /elasticsearch-plugin/elasticsearch
 echo "[INFO] Create elasticsearch Okt plugin"
-zip -r elasticsearch-6.5.2-okt-2.1.0-plugin.zip ./*
+zip -r elasticsearch-7.9.3-okt-2.1.0-plugin.zip ./*
 
 echo "[INFO] Copy .zip to ouput directory"
-rm -rf /output/elasticsearch-6.5.2-okt-2.1.0-plugin.zip
-cp elasticsearch-6.5.2-okt-2.1.0-plugin.zip \
-    /output/elasticsearch-6.5.2-okt-2.1.0-plugin.zip
+rm -rf /output/elasticsearch-7.9.3-okt-2.1.0-plugin.zip
+cp elasticsearch-7.9.3-okt-2.1.0-plugin.zip \
+    /output/elasticsearch-7.9.3-okt-2.1.0-plugin.zip

@@ -23,8 +23,8 @@ RUN rm -rf /open-korean-text/src/main/resources/org/openkoreantext/processor/uti
 COPY Dictionary /open-korean-text/src/main/resources/org/openkoreantext/processor/util
 
 WORKDIR /elasticsearch-plugin/elasticsearch
-RUN wget https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/download/6.5.2/elasticsearch-6.5.2-okt-2.1.0-plugin.zip
-RUN unzip elasticsearch-6.5.2-okt-2.1.0-plugin.zip
-RUN rm -rf elasticsearch-6.5.2-okt-2.1.0-plugin.zip
+RUN wget https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/download/7.9.3/elasticsearch-7.9.3-okt-2.1.0-plugin.zip
+RUN unzip elasticsearch-7.9.3-okt-2.1.0-plugin.zip
+RUN rm -rf elasticsearch-7.9.3-okt-2.1.0-plugin.zip
 
 WORKDIR /
