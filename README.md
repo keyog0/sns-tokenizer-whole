@@ -6,6 +6,8 @@ SNS에 출현하는 단어, 브랜드이름, 신조어 등을 follow하고 토�
 * Docker-Compose
 
 # Elasticsearch plugin version
+* [7.16.2](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/7.16.2)
+* [7.16.0](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/7.16.0)
 * [7.9.3](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/7.9.3)
 * [6.5.2](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/6.5.2)
 * [5.6.5](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/5.6.5)
