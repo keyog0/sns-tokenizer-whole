@@ -4,6 +4,12 @@ SNS에 출현하는 단어, 브랜드이름, 신조어 등을 follow하고 토�
 # Dependenceis
 * Docker
 * Docker-Compose
+
+# Elasticsearch plugin version
+* [7.9.3](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/7.9.3)
+* [6.5.2](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/6.5.2)
+* [5.6.5](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/5.6.5)
+
 # Index
 * [Install](#install)
     * [전체 빌드 및 설치](#전체-빌드-및-설치)
