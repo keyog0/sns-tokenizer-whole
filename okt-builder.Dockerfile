@@ -4,8 +4,8 @@ LABEL author="jgy206@gmail.com"
 
 COPY create-okt.sh /
 
-RUN apt update 
-RUN apt upgrade
+RUN apt update -y
+RUN apt upgrade -y
 RUN apt install -y maven
 RUN apt install -y zip
 RUN apt install -y python3-pip
