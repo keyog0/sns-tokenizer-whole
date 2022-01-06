@@ -1,5 +1,6 @@
 # sns-tokenizer-word-dict
-SNS에 출현하는 단어, 브랜드이름, 신조어 등을 follow하고 토크나이저의 성능을 올리기 위해 단어 사전을 정의 합니다.
+SNS에 출현하는 단어, 브랜드이름, 신조어 등을 follow하고 토크나이저의 성능을 올리기 위해 단어 사전을 정의 합니다.    
+Baes Model로는 openkoreantext analyzer를 사용합니다.
 
 # Dependenceis
 * Docker
