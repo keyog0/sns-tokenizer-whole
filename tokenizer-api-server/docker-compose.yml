@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  backend4:
+    build:
+      context: .
+    image: keyog/sns-tokenizer-async:stable
+    ports:
+      - 8080:8080

@@ -3,7 +3,7 @@ version: "2.4"
 services:
   elasticsearch:
     container_name: elasticsearch-custom-okt
-    image: es-okt-tokenizer:7.9.3-okt-2.1.0
+    image: es-okt-tokenizer:7.17.4-okt-2.1.0
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/network.host.html
     # Set Xmx and Xms to no more than 50% of your physical RAM.
     environment:

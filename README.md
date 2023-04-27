@@ -7,6 +7,7 @@ Baes Model로는 openkoreantext analyzer를 사용합니다.
 * Docker-Compose
 
 # Elasticsearch plugin version
+* [7.17.4](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/7.17.4)
 * [7.16.2](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/7.16.2)
 * [7.16.0](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/7.16.0)
 * [7.9.3](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases/tag/7.9.3)
@@ -40,7 +41,7 @@ Baes Model로는 openkoreantext analyzer를 사용합니다.
     
 빌드를 진행하면 `output` 디렉토리에 `.jar` 파일과 `plugin.zip` 파일이 떨어집니다.    
 해당 파일을 이용해서 konlpy 모듈의 okt를 변경하여 사용할수도 있고, elasticsearch 플러그인으로 이용할 수 있습니다.    
-해당 파일들은 [Release](https://github.com/Mysterico/sns-tokenizer-word-dict/releases) 페이지에서도 관리되며 직접 다운로드 받을 수 있습니다.    
+해당 파일들은 [Release](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases) 페이지에서도 관리되며 직접 다운로드 받을 수 있습니다.    
     
 `.jar` 파일과 `plugin.zip`을 빌드 및 설치하는 방법은 두가지 방법으로 사용가능합니다.
 
@@ -55,7 +56,7 @@ sudo ./build.sh
 ## elasticsearch 이미지만 생성
 * 경우에 따라, 사전 업데이트가 필요하지 않고 elasticsearch의 image파일만 생성할 수 있습니다.
 * 빌드를 따로 진행하지 않기 때문에 `output` 디렉토리에 `plugin.zip` 파일이 없을 수 있습니다.     
-* [Release](https://github.com/Mysterico/sns-tokenizer-word-dict/releases) 페이지의 주소를 이용하여 `plugin.zip`파일을 다운로드 받아 `output` 폴더에 넣어 줍니다.
+* [Release](https://github.com/Keunyoung-Jung/sns-tokenizer-whole/releases) 페이지의 주소를 이용하여 `plugin.zip`파일을 다운로드 받아 `output` 폴더에 넣어 줍니다.
 * 또는 직접 주소를 넣어줄 수 있습니다.
     ```dockerfile
     # Line 12

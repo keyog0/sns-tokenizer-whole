@@ -1,6 +1,6 @@
 import os
 
-filename = 'mecab'
+filename = 'niadic_new'
 mecab = open(filename+'.csv','r') 
 okt = open(filename+'.txt','w')
 

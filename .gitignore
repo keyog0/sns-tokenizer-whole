@@ -1,2 +1,6 @@
-*.zip
 *.jar
+*.zip
+elasticsearch
+.DS_Store
+__pycache__
+test
