@@ -6,17 +6,22 @@ import os
 import time
 from kiwipiepy import Kiwi
 
-kiwi = Kiwi()
-print('kiwi user dict load')
-kiwi.load_user_dictionary('kiwi-user.dict')
-kiwi.prepare()
-print('kiwi user dict complete')
+kiwi = None
+okt = None
 
-okt = Okt()
+if os.environ["kiwi"] == "true" :
+    kiwi = Kiwi()
+    print('kiwi user dict load')
+    kiwi.load_user_dictionary('kiwi-user.dict')
+    kiwi.prepare()
+    print('kiwi user dict complete')
 
-warmup_text = '레몬아이스티 디자인이 이쁘더라구요, 흰곰 그려진게 너무 귀여웠어요 공을 던졌어요 의료기기전자민원창구 알잘딱깔센하게 주세요 맛있다'
-kiwi.tokenize(warmup_text)
-okt.pos(warmup_text)
+if os.environ["okt"] == "true"  :
+    okt = Okt()
+
+    warmup_text = '레몬아이스티 디자인이 이쁘더라구요, 흰곰 그려진게 너무 귀여웠어요 공을 던졌어요 의료기기전자민원창구 알잘딱깔센하게 주세요 맛있다'
+    kiwi.tokenize(warmup_text)
+    okt.pos(warmup_text)
 
 stop_words_cls = StopWords()
 
