@@ -108,14 +108,14 @@ async def tokenize_kiwi_extract_phrases(data:RequestModel):
     return response
 
 @kiwi_router.post('/clickhouse', response_model=ResponseClickhouseTokenizeKiwi)
-async def clickhouse_tokenize(data:RequestModel):
+async def clickhouse_tokenize(data:RequestModel,adjective:bool = True):
     text = unicodedata.normalize('NFC',data.text)
     loop = asyncio.get_event_loop()
     
     with concurrent.futures.ThreadPoolExecutor() as pool:
         kiwi_tokens,kiwi_graphframe = await asyncio.gather(
             loop.run_in_executor(pool,extract_phrases_by_kiwi,text,True),
-            loop.run_in_executor(pool,get_kiwi_graphframe,text)
+            loop.run_in_executor(pool,get_kiwi_graphframe,text,adjective)
         )
 
     response = ResponseClickhouseTokenizeKiwi(

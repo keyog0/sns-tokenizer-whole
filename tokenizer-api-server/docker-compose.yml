@@ -3,7 +3,7 @@ services:
   backend4:
     build:
       context: .
-    image: keyog/sns-tokenizer-async:stable-mode
+    image: keyog/sns-tokenizer-async:stable-mode-230429
     ports:
       - 8080:8080
     environment:

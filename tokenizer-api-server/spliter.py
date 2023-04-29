@@ -58,7 +58,7 @@ def get_combinations(tokens,num=2):
             tmp['dst'].append(value)
     return tmp
 
-def get_kiwi_graphframe(text) :
+def get_kiwi_graphframe(text,adjective=True) :
     graphframe = []
     sentences = tokenized_sentence_no_special(text)
     graphframe = {
@@ -66,8 +66,11 @@ def get_kiwi_graphframe(text) :
                 'dst':[]
             }
     for sentence in sentences :
-        tokens,adjective,_,_ = extract_phrases_by_kiwi(sentence,adjective=True)
-        combnations = get_combinations(list(set(tokens+adjective)))
+        tokens,adjective_tokens,_,_ = extract_phrases_by_kiwi(sentence,adjective=True)
+        if adjective :
+            combnations = get_combinations(list(set(tokens+adjective_tokens)))
+        else :
+            combnations = get_combinations(list(set(tokens)))
         graphframe['src'] += combnations['src']
         graphframe['dst'] += combnations['dst']
     return graphframe
